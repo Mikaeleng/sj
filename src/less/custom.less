@@ -1,7 +1,7 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: 'sj_sansregular','Fontawesome';
+    font-family: sj_sansregular,'Fontawesome', sj_sansbold;
 }
 .button-success,
 .button-error,
@@ -39,7 +39,28 @@ html, button, input, select, textarea,
 
 #top-tabs{
     background: #ebebe3;
-    padding: 1rem 0;
+    font-size: 20px;
+    font-family: sj_sansbold;
+
+    #news-tab{
+        background: #00AE49;
+        color: #fff;
+
+        img{
+            padding: 1rem 0;
+            margin-left: 1rem;
+            margin-right: 0.25rem;
+            vertical-align: middle;
+        }
+    }
+    #work-tab{
+        img{
+            margin-left: 1rem;
+            margin-right: 0.25rem;
+            vertical-align: middle;
+        }
+
+    }
 }
 
 #list-pagination{
@@ -47,7 +68,11 @@ html, button, input, select, textarea,
 }
 
 pre{
-    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 22px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    margin-left: 11px;
 }
 
 .cat-news, .cat-blog, .cat-subscribe, .cat-kpi, .cat-train{
@@ -55,6 +80,7 @@ pre{
     min-height: 44px;
     line-height: 44px;
     text-align: center;
+    font-size: 15px;
 }
 .cat-news{
     background: #7FDBEF;

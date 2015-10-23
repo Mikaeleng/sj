@@ -26,18 +26,18 @@ function addNewsList(){
 
     ?>
 <li class="pure-g cat">
-    <div class="pure-u-1-3 cat-news">
+    <div class="pure-u-1-5 cat-news">
         <span>NYHET</span>
     </div>
-    <div class="pure-u-1-4">
-       <pre class="pure-u-1">Headline</pre>
+    <div class="pure-u-4-5">
+       <pre class="pure-u-1">Rubrik lorem ipsum dolor sit amet consectetuer</pre>
     </div>
 </li>
 <li class="pure-g cat">
-    <div class="pure-u-3-4 cat-blog">
+    <div class="pure-u-1-4 cat-blog">
         <span>BLOG</span>
     </div>
-    <div class="pure-u-2-3">
+    <div class="pure-u-1-4">
        <pre class="pure-u-1">Headline</pre>
     </div>
 </li>
