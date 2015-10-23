@@ -4,10 +4,10 @@ function addTopMenu(){
         ?>
 <div class="pure-g" id="top-menu">
     <div class="pure-u-1-2">
-        MENY
+        <span>MENY</span>
     </div>
     <div class="pure-u-1-2">
-        SÖK
+        <span>SÖK</span>
     </div>
 </div>
 <?php
@@ -25,63 +25,38 @@ function createMainNav(){
 function addNewsList(){
 
     ?>
-<li class="pure-g cat">
-    <div class="pure-u-1-5 cat-news">
-        <span>NYHET</span>
-    </div>
-    <div class="pure-u-4-5">
-       <pre class="pure-u-1">Rubrik lorem ipsum dolor sit amet consectetuer</pre>
-    </div>
-</li>
-<li class="pure-g cat">
-    <div class="pure-u-1-4 cat-blog">
-        <span>BLOG</span>
-    </div>
-    <div class="pure-u-1-4">
-       <pre class="pure-u-1">Headline</pre>
-    </div>
-</li>
-<li class="pure-g cat">
-    <div class="pure-u-1-5 cat-news">
-        <span>NYHET</span>
-    </div>
-    <div class="pure-u-4-5">
-       <pre class="pure-u-1">Headline</pre>
-    </div>
-</li>
-<li class="pure-g cat">
-    <div class="pure-u-1-5 cat-subscribe">
-        <span>PRENUMERATION</span>
-    </div>
-    <div class="pure-u-4-5">
-       <pre class="pure-u-1">Headline</pre>
-    </div>
-</li>
-<li class="pure-g cat">
-    <div class="pure-u-1-5 cat-kpi">
-        <span>NYCKELTAL</span>
-    </div>
-    <div class="pure-u-4-5">
-       <pre class="pure-u-1">Headline</pre>
-    </div>
-</li>
-<li class="pure-g cat">
-    <div class="pure-u-1-5 cat-news">
-        <span>NYHET</span>
-    </div>
-    <div class="pure-u-4-5">
-       <pre class="pure-u-1">Headline</pre>
-    </div>
-</li>
-<li class="pure-g cat">
-    <div class="pure-u-1-5 cat-train">
-        <span>PÅ TÅGEN</span>
-    </div>
-    <div class="pure-u-4-5">
-       <pre class="pure-u-1">Headline</pre>
-    </div>
-</li>
-
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">NYHET</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-4 cat-blog">BLOG</div>
+       <div class="pure-u-3-4 cat-caption"> <span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-4 cat-blog">BLOG</div>
+       <div class="pure-u-3-4 cat-caption"> <span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">NYHET</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-7-24 cat-kpi">NYCKELTAL</div>
+       <div class="pure-u-17-24 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-7-24 cat-train">PÅ TÅGEN</div>
+       <div class="pure-u-14-24 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-7-24 cat-subscribe">ETIKETT</div>
+       <div class="pure-u-16-24 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">NYHET</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
 <?php
     /*$cat = array('news'=>'NYHET', 'blog' =>'BLOGG', 'kpi' => 'NYCKELTAL', 'subribe'=>'PRENUMERATION');
     for ($i = 1; $i <= 7; $i++) {
@@ -97,5 +72,34 @@ function addNewsList(){
 <?php
     }*/
     
+}
+
+function addWorkList(){
+    ?>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">LÄNK</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">LÄNK</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">LÄNK</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">LÄNK</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">LÄNK</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g cat">
+    <div class="pure-u-1-5 cat-news">LÄNK</div>
+       <div class="pure-u-4-5 cat-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<?php
 }
 ?>

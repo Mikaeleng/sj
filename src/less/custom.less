@@ -1,7 +1,12 @@
+@import "_mixin";
+@import "../sj-icons/sj-icons.css";
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
     font-family: sj_sansregular,'Fontawesome', sj_sansbold;
+}
+body{
+    background:#EEEEEE;
 }
 .button-success,
 .button-error,
@@ -27,26 +32,64 @@ html, button, input, select, textarea,
 .button-secondary {
     background: rgb(66, 184, 221); /* this is a light blue */
 }
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
 
 #top-menu{
     height: 66px;
     border-bottom: 1px gray;
+    div:first-of-type{
+        span{padding-left: 0.7rem;}
+    }
+        div{
+            vertical-align: middle;
+            line-height: 66px;
+
+            &:last-of-type{
+                text-align: right;
+                span {
+                    padding-right: 0.7rem;
+                }
+            }
+        }
+
 }
 #content{
     max-width: 960px;
     margin: 0 auto;
 }
-
+.active-tab{
+    background: #00AE49;
+    color: @kalk;
+}
 #top-tabs{
-    background: #ebebe3;
+    background: #D7D7D7;
     font-size: 20px;
     font-family: sj_sansbold;
+    color: @sten;
 
     #news-tab{
-        background: #00AE49;
-        color: #fff;
-
-        img{
+        i{font-size: 2rem;
+        display: inline-block;
+            margin: 0.5rem auto;}
+        span{
+            align-items: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
             padding: 1rem 0;
             margin-left: 1rem;
             margin-right: 0.25rem;
@@ -54,53 +97,91 @@ html, button, input, select, textarea,
         }
     }
     #work-tab{
-        img{
+        i{font-size: 2rem;
+            display: inline-block;
+            margin: 0.5rem auto;}
+        span{
+            align-items: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            padding: 1rem 0;
             margin-left: 1rem;
             margin-right: 0.25rem;
             vertical-align: middle;
         }
+    }
+}
+#sort-menu{
+    min-height: 40px;
 
+    #button-sort{
+
+        min-width: 44px;
+        min-height: 44px;
+        line-height: 44px;
+        text-align: center;
+        font-size: 15px;
+
+    }
+    #button-pagination{
+        min-width: 44px;
+        min-height: 44px;
+        line-height: 44px;
+        text-align: right;
+        font-size: 15px;
+        i{padding-right: 0.7rem;}
     }
 }
 
-#list-pagination{
-    text-align: right;
-}
+.cat{
+    background: #FFF;
+    margin:  0.3rem 0;
 
-pre{
-    font-size: 0.9rem;
-    line-height: 22px;
-    vertical-align: middle;
-    word-wrap: break-word;
-    margin-left: 11px;
-}
+        .cat-caption{
+            font-size: 0.9rem;
+            vertical-align: middle;
+            word-wrap: break-word;
 
-.cat-news, .cat-blog, .cat-subscribe, .cat-kpi, .cat-train{
-    min-width: 44px;
-    min-height: 44px;
-    line-height: 44px;
-    text-align: center;
-    font-size: 15px;
-}
-.cat-news{
-    background: #7FDBEF;
+            span{padding-left: 0.4rem; display: inline-block;}
 
-}
-.cat-blog{
-    background: #00AE49;
+            align-items: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+        }
+        .cat-news, .cat-blog, .cat-subscribe, .cat-kpi, .cat-train{
 
-}
-.cat-subscribe{
-    background: #74786D;
+            min-width: 44px;
+            min-height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 15px;
 
-}
-.cat-kpi{
-    background: #EFDF02;
+        }
+        .cat-news{
+            background: #7FDBEF;
+            color: #003961;
 
-}
-.cat-train{
-    background: #00AE49;
+        }
+        .cat-blog{
+            background: #2B7EA7;
 
+        }
+        .cat-subscribe{
+            background: #74786D;
+            color:#FFF;
+
+        }
+        .cat-kpi{
+            background: #EFDF02;
+
+        }
+        .cat-train{
+            background: #00AE49;
+            color:#FFF;
+
+        }
 }
 
 
