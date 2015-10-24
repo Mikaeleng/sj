@@ -9,7 +9,7 @@ jQuery( document ).ready(function( $ ) {
     $( window ).resize(function() {
 
         _winWidth = $( window).width();
-       toggleElements();
+        toggleElements();
 
     });
 
@@ -63,44 +63,56 @@ jQuery( document ).ready(function( $ ) {
         });
 });
 
-$( "#button-sort" ).click(function() {
-        $("#sort-menu").addClass("hidden");
-        $("#sort-items").removeClass("hidden");
-});
-
-$( "#sort-items button" ).click(function(event) {
-    event.preventDefault();
-    $("#sort-menu").removeClass("hidden");
-    $("#sort-items").addClass("hidden");
-});
-
-
-$( ".cat-news, .cat-blog, .cat-subscribe, .cat-train, .cat-kpi" ).click(function(event) {
-    event.preventDefault();
-    $("#resetList-button").removeClass("hidden");
-    var _class = event.target.classList[2];
-    $( ".cat" ).each(function( index ) {
-        if($(this).children().hasClass(_class)==false){
-            $(this).addClass("hidden");
-        }
-    });102
-});
-
-$( "#resetList-button" ).click(function(event) {
-    event.preventDefault();
-    $(this).addClass("hidden");
-    $( ".cat" ).each(function( index ) {
-        $(this).removeClass("hidden");
+    $( "#button-sort" ).click(function() {
+            $("#sort-menu").addClass("hidden");
+            $("#sort-items").removeClass("hidden");
     });
-});
 
+    $( "#sort-items button" ).click(function(event) {
+        event.preventDefault();
+        $("#sort-menu").removeClass("hidden");
+        $("#sort-items").addClass("hidden");
+    });
+
+
+    $( ".cat-news, .cat-blog, .cat-subscribe, .cat-train, .cat-kpi" ).click(function(event) {
+        event.preventDefault();
+        $("#resetList-button").removeClass("hidden");
+        var _class = event.target.classList[2];
+        $( ".cat" ).each(function( index ) {
+            if($(this).children().hasClass(_class)==false){
+                $(this).addClass("hidden");
+            }
+        });102
+    });
+
+    $( "#resetList-button" ).click(function(event) {
+        event.preventDefault();
+        $(this).addClass("hidden");
+        $( ".cat" ).each(function( index ) {
+            $(this).removeClass("hidden");
+        });
+
+    });
+
+    $( ".fa-cog" ).click(function(event) {
+        event.preventDefault();
+        console.info("go");
+        $(".work").css("display","none");
+    });
+
+
+// outside ready function / helper classes
 
 function toggleElements(){
-    if(_winWidth>1024){
+    if(_winWidth>568){
+        $("#sort-items").removeClass("hidden");
         $("#work").removeClass("hidden");
-    }else if(_winWidth<1024){
+    }else if(_winWidth<568){
+        $("#sort-items").addClass("hidden");
         $("#work").addClass("hidden");
 
     }
 }
+
 

@@ -1,0 +1,57 @@
+{
+  "checksum": {
+    "previous": "88ae769694e20652dbdc3c0b52d9a58ab49cd46e4986085f2d94457f6f422251",
+    "current": "88ae769694e20652dbdc3c0b52d9a58ab49cd46e4986085f2d94457f6f422251"
+  },
+  "fonts": [
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons.ttf",
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons.svg",
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons.woff",
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons.eot"
+  ],
+  "glyphs": {
+    "heart": {
+      "codepoint": 61696,
+      "source": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors/heart.svg"
+    },
+    "train": {
+      "codepoint": 61697,
+      "source": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors/train.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".sj-icons-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "sj-icons",
+    "force": true,
+    "input": {
+      "templates": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors",
+      "vectors": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "/Applications/AMPPS/www/dev/sj/src/sj-icons",
+      "fonts": "/Applications/AMPPS/www/dev/sj/src/sj-icons",
+      "preview": "/Applications/AMPPS/www/dev/sj/src/sj-icons"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "skip_first": false,
+    "templates": [
+      "scss",
+      "preview",
+      "css"
+    ]
+  },
+  "templates": [
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/_sj-icons.scss",
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons-preview.html",
+    "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons.css"
+  ]
+}
