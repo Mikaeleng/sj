@@ -4,6 +4,7 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
     font-family: sj_sansregular,'Fontawesome', sj_sansbold;
+
 }
 body{
     background:#EEEEEE;
@@ -68,8 +69,7 @@ body{
 
 }
 #content{
-    max-width: 960px;
-    margin: 0 auto;
+
 }
 .active-tab{
     background: #00AE49;
@@ -80,6 +80,7 @@ body{
     font-size: 20px;
     font-family: sj_sansbold;
     color: @sten;
+cursor: pointer;
 
     #news-tab{
         i{font-size: 2rem;
@@ -112,8 +113,18 @@ body{
         }
     }
 }
+.arrow-row{
+    div{
+text-align: center;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+        height:22px;
+        img{vertical-align: top;}
+    }
+}
 #sort-menu{
-    min-height: 40px;
+    min-height: 22px;
 
     #button-sort{
 
@@ -122,6 +133,7 @@ body{
         line-height: 44px;
         text-align: center;
         font-size: 15px;
+        cursor: pointer;
 
     }
     #button-pagination{
@@ -130,15 +142,20 @@ body{
         line-height: 44px;
         text-align: right;
         font-size: 15px;
+        cursor: pointer;
         i{padding-right: 0.7rem;}
     }
 }
 
-.cat{
+#sort-items{
+    label{font-size: 1rem;display: inline-block;}
+
+}
+.cat, .work{
     background: #FFF;
     margin:  0.3rem 0;
 
-        .cat-caption{
+        .cat-caption,.work-caption{
             font-size: 0.9rem;
             vertical-align: middle;
             word-wrap: break-word;
@@ -182,6 +199,33 @@ body{
             color:#FFF;
 
         }
+    .work-link{
+        min-width: 44px;
+        min-height: 44px;
+        line-height: 44px;
+        text-align: center;
+        font-size: 15px;
+        background: #ebebe3;
+    }
 }
 
 
+
+@media screen and (min-width: 64em) {
+    #sort-items{
+        display: inline-block;
+    }
+    #sort-menu{
+        display: none;
+    }
+
+    .arrow-row{
+        display: none;
+    }
+
+    #news, #work{
+        div:first-of-type{
+            margin-top:0;
+        }
+    }
+}
