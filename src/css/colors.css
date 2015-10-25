@@ -1,0 +1,97 @@
+@import "../sj-icons/sj-icons.css";
+#top-nav {
+  min-height: 66px;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+#top-nav div:nth-child(2) {
+  text-align: center;
+}
+#top-nav div:first-of-type {
+  text-align: left;
+}
+#top-nav div:first-of-type span {
+  padding-left: 1rem;
+  vertical-align: middle;
+  line-height: inherit;
+}
+#top-nav div:last-of-type {
+  text-align: right;
+}
+#top-nav div:last-of-type span {
+  padding-right: 1rem;
+  vert-align: middle;
+  line-height: inherit;
+}
+#navbar {
+  min-height: 66px;
+  background: #D7D7D7;
+  font-size: 1.25rem;
+  color: #252525;
+  cursor: pointer;
+}
+#navbar div {
+  min-height: 66px;
+}
+#navbar div:first-of-type div {
+  width: 100%;
+  padding-left: 1rem;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 55px;
+}
+#navbar div:last-child div {
+  width: 100%;
+  padding-left: 1rem;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 55px;
+}
+#navbar .active-tab {
+  background: #00af49;
+  color: #ffffff;
+}
+#arrowbar div {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  height: 22px;
+}
+#arrowbar div img {
+  vertical-align: top;
+}
+#sort-section #news-sortbar {
+  min-height: 50px;
+  background: transparent;
+}
+#sort-section #work-sortbar,
+#sort-section #work-selectbar,
+#sort-section #news-selectbar {
+  display: none;
+}
+#sort-section label {
+  display: inline-block;
+}
+#sort-section #news-sortbar #news-sortButton {
+  width: 100%;
+  padding-left: 1rem;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 55px;
+}
+#sort-section #news-sortbar div:last-of-type {
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: right;
+}
+@media screen and (min-width: 64em) {
+  #sort-section #work-selectbar,
+  #sort-section #news-selectbar {
+    display: inline-block;
+  }
+  #sort-section #news-sortbar,
+  #sort-section #work-sortbar {
+    display: none;
+  }
+}

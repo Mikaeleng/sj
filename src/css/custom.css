@@ -107,19 +107,20 @@ body {
   vertical-align: middle;
 }
 #top-tabs .active-tab {
-  background: #00AE49;
+  background: #00af49;
   color: #ffffff;
 }
-.arrow-row div {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  height: 22px;
-}
-.arrow-row div img {
-  vertical-align: top;
-}
+/*
+.arrow-row{
+    div{
+text-align: center;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+        height:22px;
+        img{vertical-align: top;}
+    }
+}*/
 #sort-menu {
   min-height: 22px;
 }

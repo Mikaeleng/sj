@@ -15,6 +15,22 @@ function addTopMenu(){
 <?php
 }
 
+function createTopMenu(){
+        ?>
+<div class="pure-g" id="top-nav">
+    <div class="pure-u-1-3 pure-u-sm-1-3">
+       <span>MENY</span>
+    </div>
+    <div class="pure-u-1-3 pure-u-sm-1-3">
+        <img src="assets/img/sjlogga.png"></im>
+    </div>
+    <div class="pure-u-1-3 pure-u-sm-1-3">
+        <span>SÖK</span>
+    </div>
+</div>
+<?php
+}
+
 // main navigation
 function createMainNav(){
  ?>

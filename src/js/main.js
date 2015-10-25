@@ -14,15 +14,15 @@ jQuery( document ).ready(function( $ ) {
     });
 
 
-    $( "#news-tab" ).click(function(event) {
-    if(_winWidth<568) {
+    $( "#news-button" ).click(function(event) {
+    if(_winWidth<1024) {
         event.preventDefault();
         $("#sort-menu").removeClass("hidden");
         $("#sort-items").addClass("hidden");
 
         // toggle bacground color on buttons
-        $("#news-tab").addClass('active-tab');
-        $("#work-tab").removeClass('active-tab');
+        $("#news-button").addClass('active-tab');
+        $("#work-button").removeClass('active-tab');
 
         // shows/hides green arrow
         $("#right-arrow img").addClass('hidden');
@@ -38,16 +38,16 @@ jQuery( document ).ready(function( $ ) {
     }
     });
 
-    $( "#work-tab" ).click(function(event) {
-        if(_winWidth<568) {
+    $( "#work-button" ).click(function(event) {
+        if(_winWidth<1024) {
             event.preventDefault();
             $("#sort-menu").removeClass("hidden");
             $("#sort-items").addClass("hidden");
 
-            $("#news-tab").removeClass('active-tab');
+            $("#news-button").removeClass('active-tab');
+            $("#work-button").addClass('active-tab');
 
             $("#work").removeClass('hidden');
-            $("#work-tab").addClass('active-tab');
 
             // shows/hides green arrow
             $("#left-arrow img").addClass('hidden');
@@ -105,14 +105,14 @@ jQuery( document ).ready(function( $ ) {
 // outside ready function / helper classes
 
 function toggleElements(){
-    if(_winWidth>568){
+    /*if(_winWidth>568){
         $("#sort-items").removeClass("hidden");
         $("#work").removeClass("hidden");
     }else if(_winWidth<568){
         $("#sort-items").addClass("hidden");
         $("#work").addClass("hidden");
 
-    }
+    }*/
 }
 
 

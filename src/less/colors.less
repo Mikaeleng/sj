@@ -1,0 +1,106 @@
+@import "_mixin";
+@import "../sj-icons/sj-icons.css";
+
+#top-nav{
+    min-height: 66px;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    div:nth-child(2){text-align: center;}
+    div:first-of-type{
+        text-align: left;
+        span{padding-left:1rem; vertical-align: middle; line-height: inherit;}
+    }
+    div:last-of-type{
+        text-align: right;
+        span{padding-right: 1rem; vert-align: middle; line-height: inherit;}
+    }
+}
+
+#navbar{
+    min-height: 66px;
+    background: @tab-background;
+    font-size: 1.25rem;
+    color: @sten;
+    cursor: pointer;
+        div{
+            min-height: 66px;
+        }
+        div:first-of-type{
+
+            div{
+                width: 100%;
+                padding-left: 1rem;
+                text-align: left;
+                vertical-align: middle;
+                line-height: 55px;
+            }
+
+        }
+        div:last-child{
+            div{
+                width: 100%;
+                padding-left: 1rem;
+                text-align: left;
+                vertical-align: middle;
+                line-height: 55px;
+            }
+
+        }
+
+    .active-tab{
+        background: @leaf;
+        color: @kalk;
+    }
+
+
+}
+#arrowbar{
+    div{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+        height:22px;
+        img{vertical-align: top;}
+    }
+}
+
+#sort-section {
+    #news-sortbar {
+        min-height: 50px;
+        background: transparent;
+    }
+
+    #work-sortbar, #work-selectbar, #news-selectbar{
+        display: none;
+    }
+    label{display: inline-block}
+    #news-sortbar{
+        #news-sortButton {
+            width: 100%;
+            padding-left: 1rem;
+            text-align: left;
+            vertical-align: middle;
+            line-height: 55px;
+        }
+        div:last-of-type { line-height:50px; vertical-align:middle; text-align: right;}
+    }
+
+    @media screen and (min-width: 64em) {
+        #work-selectbar, #news-selectbar{
+            display: inline-block;
+        }
+        #news-sortbar, #work-sortbar{ display: none;}
+
+    }
+}
+
+#content{
+
+}
+    div{
+    div:first-of-type{
+    }
+    div:last-of-type{
+    }
+}
