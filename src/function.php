@@ -122,6 +122,55 @@ function addWorkList(){
     <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
        <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
 </div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+<div class="pure-g pure-u-lg-1 work hidden">
+    <div class="pure-u-1-5 pure-u-lg-2-24 work-link">LÄNK</div>
+       <div class="pure-u-4-5 work-caption"><span>Rubrik lorem ipsum dolor sit amet consectetuer</span></div>
+</div>
+
 <?php
 }
 ?>

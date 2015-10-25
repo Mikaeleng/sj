@@ -104,14 +104,22 @@ include_once "function.php";
     
     <!-- Content section -->
         <div class="pure-g" id="content">
-            <div class="pure-u-1 pure-u-sm-1-2">
+            <div class="pure-u-1 pure-u-sm-1-2" id="news-content">
             <div class="pure-g pure-u-1">
                 <button class="pure-u-5-5 pure-button pure-button-primary button-xl hidden"id="resetList-button" >Återställ listan</button>
-                <?//php addNewsList();
+                <?php addNewsList();
 ?>
             </div>
             </div>
-            <div class="pure-u-1 pure-u-sm-1-2"></div>
+            <div class="pure-u-1 pure-u-sm-1-2" id="work-content">
+                <div class="pure-g pure-u-1">
+                <button class="pure-u-5-5 pure-button pure-button-primary button-xl hidden"id="resetList-button" >Återställ listan</button>
+                <?php addWorkList();
+?>
+                    <div id="show-more-button" class="pure-g pure-u-lg-1"><button class="pure-u-5-5 pure-button button-xl">Visa fler</button></div>
+                    <div id="show-less-button"><button class="pure-u-5-5 pure-button button-xl" >Visa färre</button></div>
+            </div>
+            </div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>

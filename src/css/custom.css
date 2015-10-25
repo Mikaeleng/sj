@@ -150,7 +150,7 @@ text-align: center;
 .cat,
 .work {
   background: #FFF;
-  margin: 0.3rem 0;
+  margin: 5px 0;
 }
 .cat .cat-caption,
 .work .cat-caption,
@@ -222,14 +222,9 @@ text-align: center;
 @media screen and (min-width: 35.5em) {
   #content,
   #top-tabs,
-  #sort-items {
+  #sort-section {
     max-width: 1024px;
     margin: 0 auto;
-  }
-  #content {
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
   #top-tabs {
     -webkit-justify-content: space-between;
@@ -243,8 +238,10 @@ text-align: center;
   #sort-items label:first-of-type {
     padding-left: 1rem;
   }
-  .work {
+  .work,
+  #show-more-button {
     display: inline-block;
+    margin-left: 1rem;
   }
   #sort-menu {
     display: none;
@@ -261,5 +258,8 @@ text-align: center;
   }
   #sort-items button {
     display: none;
+  }
+  #work-selectbar div {
+    margin-left: 7.4rem;
   }
 }
