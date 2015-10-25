@@ -1,6 +1,7 @@
 @import "_mixin";
 @import "../sj-icons/sj-icons.css";
 
+
 #top-nav{
     min-height: 66px;
     margin-bottom: 1rem;
@@ -54,8 +55,12 @@
 
 
 }
+
+
+
 #arrowbar{
     div{
+        display: block;
         text-align: center;
         margin: 0;
         padding: 0;
@@ -69,6 +74,11 @@
     #news-sortbar {
         min-height: 50px;
         background: transparent;
+    }
+    #arrowbar{
+        div{
+            display: none;
+        }
     }
 
     #work-sortbar, #work-selectbar, #news-selectbar{
@@ -86,8 +96,12 @@
         div:last-of-type { line-height:50px; vertical-align:middle; text-align: right;}
     }
 
+
     @media screen and (min-width: 64em) {
-        
+        #work-content{
+            display: block;
+        }
+
         .fa-close{
             display: none;}
         #work-selectbar, #news-selectbar{
@@ -95,19 +109,13 @@
         }
         #news-sortbar, #work-sortbar{ display: none;}
 
-        #work-content{
-            overflow: hidden;}
         #show-more-button{    margin-left: 0.9rem;
-            width: 100%;}
-    }
-}
+            width: 100%;
+        }
 
-    div{
-    div:first-of-type{
-    }
-    div:last-of-type{
         #show-less-button{
             display: none;
         }
     }
 }
+

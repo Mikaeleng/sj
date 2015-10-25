@@ -52,6 +52,7 @@
   color: #ffffff;
 }
 #arrowbar div {
+  display: block;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -64,6 +65,9 @@
 #sort-section #news-sortbar {
   min-height: 50px;
   background: transparent;
+}
+#sort-section #arrowbar div {
+  display: none;
 }
 #sort-section #work-sortbar,
 #sort-section #work-selectbar,
@@ -86,6 +90,9 @@
   text-align: right;
 }
 @media screen and (min-width: 64em) {
+  #sort-section #work-content {
+    display: block;
+  }
   #sort-section .fa-close {
     display: none;
   }
@@ -97,14 +104,11 @@
   #sort-section #work-sortbar {
     display: none;
   }
-  #sort-section #work-content {
-    overflow: hidden;
-  }
   #sort-section #show-more-button {
     margin-left: 0.9rem;
     width: 100%;
   }
-}
-div div:last-of-type #show-less-button {
-  display: none;
+  #sort-section #show-less-button {
+    display: none;
+  }
 }

@@ -151,18 +151,7 @@ text-align: center;
 .work {
   background: #FFF;
   margin: 5px 0;
-}
-.cat .cat-caption,
-.work .cat-caption,
-.cat .work-caption,
-.work .work-caption {
-  font-size: 0.9rem;
-  vertical-align: middle;
-  word-wrap: break-word;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
+  cursor: pointer;
 }
 .cat .cat-caption span,
 .work .cat-caption span,
@@ -170,6 +159,11 @@ text-align: center;
 .work .work-caption span {
   padding-left: 0.4rem;
   display: inline-block;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  word-wrap: break-word;
+  line-height: 0.9rem;
+  padding-top: 3px;
 }
 .cat .cat-news,
 .work .cat-news,
@@ -219,6 +213,32 @@ text-align: center;
   font-size: 15px;
   background: #ebebe3;
 }
+#content #work-content {
+  display: none;
+}
+#content #work-content #show-less-button {
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  #arrowbar {
+    display: none;
+  }
+  .cat,
+  .work {
+    line-height: 44px;
+  }
+  .cat .cat-caption,
+  .work .cat-caption,
+  .cat .work-caption,
+  .work .work-caption {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    line-height: inherit;
+  }
+  #content #work-content {
+    display: block;
+  }
+}
 @media screen and (min-width: 35.5em) {
   #content,
   #top-tabs,
@@ -246,20 +266,10 @@ text-align: center;
   #sort-menu {
     display: none;
   }
-  .arrow-row {
-    display: none;
-  }
-  #news div:first-of-type,
-  #work div:first-of-type {
-    margin-top: 0;
-  }
-  #work {
-    overflow: hidden;
-  }
   #sort-items button {
     display: none;
   }
   #work-selectbar div {
-    margin-left: 7.4rem;
+    margin-left: 2.5rem;
   }
 }

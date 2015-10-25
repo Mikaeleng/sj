@@ -68,9 +68,7 @@ body{
         }
 
 }
-#content{
 
-}
 
 #top-tabs{
     font-size: 20px;
@@ -161,18 +159,20 @@ text-align: center;
 .cat, .work{
     background: #FFF;
     margin:  5px 0;
+    cursor: pointer;
 
         .cat-caption,.work-caption{
-            font-size: 0.9rem;
-            vertical-align: middle;
-            word-wrap: break-word;
 
-            span{padding-left: 0.4rem; display: inline-block;}
 
-            align-items: center;
-            -webkit-align-items: center;
-            -moz-align-items: center;
-            -ms-align-items: center;
+            span{
+                padding-left: 0.4rem; display: inline-block;
+                font-size: 0.9rem;
+                vertical-align: middle;
+                word-wrap: break-word;
+                line-height: 0.9rem;
+                padding-top:3px;
+            }
+
         }
         .cat-news, .cat-blog, .cat-subscribe, .cat-kpi, .cat-train{
 
@@ -216,7 +216,31 @@ text-align: center;
     }
 }
 
+#content{
+    #work-content{
+        display: none;
+        #show-less-button{
+            display: none;}
+    }
+}
+@media screen and (min-width: 64em) {
 
+    #arrowbar{display: none;}
+
+    .cat, .work {
+        line-height: 44px;
+        .cat-caption, .work-caption {
+            font-size: 1.1rem;
+            vertical-align: middle;
+            line-height: inherit;
+        }
+    }
+    #content{
+        #work-content{
+            display: block;
+        }
+    }
+}
 
 @media screen and (min-width: 35.5em) {
 #content, #top-tabs,#sort-section{
@@ -244,26 +268,13 @@ text-align: center;
         display: none;
     }
 
-    .arrow-row{
-        display: none;
-    }
-
-    #news, #work{
-        div:first-of-type{
-            margin-top:0;
-        }
-    }
-    #work{
-        overflow: hidden;
-    }
-
     #sort-items button{
         display: none;
     }
 
     #work-selectbar{
         div{
-            margin-left:7.4rem;
+            margin-left:2.5rem;
         }
     }
 

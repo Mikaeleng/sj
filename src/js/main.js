@@ -18,6 +18,7 @@ jQuery( document ).ready(function( $ ) {
 
     toggleElements();
 
+
     $( window ).resize(function() {
 
         _winWidth = $( window).width();
@@ -74,11 +75,10 @@ jQuery( document ).ready(function( $ ) {
             });
         }
         });
-});
 
     $( "#button-sort" ).click(function() {
-            $("#sort-menu").addClass("hidden");
-            $("#sort-items").removeClass("hidden");
+        $("#sort-menu").addClass("hidden");
+        $("#sort-items").removeClass("hidden");
     });
 
     $( "#sort-items button" ).click(function(event) {
@@ -108,53 +108,66 @@ jQuery( document ).ready(function( $ ) {
 
     });
 
-$( "#show-more-button" ).click(function(event) {
-    event.preventDefault();
-    $(this).hide();
-    $( "#news-content" ).hide();
-    if(_screen == "large")$( "#work-content" ).css("width","100%");
-    $( "#work-content" ).css("background","#fff");
+    $( "#show-more-button" ).click(function(event) {
+        event.preventDefault();
+        $(this).hide();
+        $( "#news-content" ).hide();
+        if(_screen == "large")$( "#work-content" ).css("width","100%");
+        $( "#work-content" ).css("background","#fff");
 
-    if(_screen == "large")$( ".work" ).css("width","33%");
-    if(_screen == "large")$( ".work-link" ).css("margin-left","0.9rem");
-    if(_screen == "large")$( "#work-selectbar div" ).css("margin-left","2.4rem");
-    $( ".work" ).removeClass("hidden");
-    if(_screen == "large") $( "#news-button" ).hide();
-    if(_screen == "large") $( "#arrowbar" ).hide();
-    if(_screen == "large") $( "#news-selectbar" ).hide();
-    $("#show-less-button").show();
+        if(_screen == "large")$( ".work" ).css("width","33%");
+        if(_screen == "large")$( ".work-link" ).css("margin-left","0.9rem");
+        if(_screen == "large")$( "#work-selectbar div" ).css("margin-left","2.4rem");
+        $( ".work" ).removeClass("hidden");
+        if(_screen == "large") $( "#news-button" ).hide();
+        if(_screen == "large") $( "#arrowbar" ).hide();
+        if(_screen == "large") $( "#news-selectbar" ).hide();
+        $("#show-less-button").show();
 
-});
-$( "#show-less-button" ).click(function(event) {
-    event.preventDefault();
-    $("#show-more-button").show();
-    $("#show-more-button").removeClass("hidden");
-    if(_screen == "large")$( "#news-content" ).show();
-    if(_screen == "large") $( "#work-content" ).css("width","50%");
-    $( "#work-content" ).css("background","transparent");
-
-    $( ".work" ).css("width","100%");
-    $( ".work" ).each(function( index ) {
-        console.log( index + ": " + $( this ).text() );
-        if(index>6){
-            $(this).addClass("hidden");
-        }
     });
-    $( ".work-link" ).css("margin-left","0");
-    $( "#news-button" ).show();
-    $( "#arrowbar" ).show();
-    $("#show-less-button").hide();
+    $( "#show-less-button" ).click(function(event) {
+        event.preventDefault();
+        $("#show-more-button").show();
+        $("#show-more-button").removeClass("hidden");
+        if(_screen == "large")$( "#news-content" ).show();
+        if(_screen == "large") $( "#work-content" ).css("width","50%");
+        $( "#work-content" ).css("background","transparent");
 
-    if(_screen == "large") $( "#news-selectbar" ).show();
-    if(_screen == "large")$( "#work-selectbar div" ).css("margin-left","7.4rem");
+        $( ".work" ).css("width","100%");
+        $( ".work" ).each(function( index ) {
+            if(index>6){
+                $(this).addClass("hidden");
+            }
+        });
+        $( ".work-link" ).css("margin-left","0");
+        $( "#news-button" ).show();
+        $( "#arrowbar" ).show();
+        $("#show-less-button").hide();
 
-});
+        if(_screen == "large") $( "#news-selectbar" ).show();
+        if(_screen == "large")$( "#work-selectbar div" ).css("margin-left","2.5rem");
+
+    });
 
     $( ".fa-cog" ).click(function(event) {
         event.preventDefault();
-        console.info("go");
         $(".work").css("display","none");
     });
+
+    $( "#news-sortbar" ).click(function(event) {
+        event.preventDefault();
+        $(this).hide();
+        $("#news-selectbar").show();
+    });
+
+    $( "#close-news-sort" ).click(function(event) {
+        event.preventDefault();
+        $("#news-selectbar").hide();
+        $("#news-sortbar").show();
+    });
+});
+
+
 
 
 // outside ready function / helper classes

@@ -70,7 +70,11 @@ include_once "function.php";
         <input type="radio" name="sorting" id="popular" >
             Mest lästa
         </label>
-        <button class=" pure-button pure-button-primary fa-close"></button>
+        <label for="popular">
+        <input type="radio" name="sorting" id="popular" >
+            Din roll
+        </label>
+        <a class=" pure-button pure-button-primary fa-close" id="close-news-sort"></a>
     </fieldset>
 </form></div>
     </div>
