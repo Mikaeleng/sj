@@ -1,11 +1,53 @@
 @import "../sj-icons/sj-icons.css";
 #headline {
   min-height: 66px;
+  display: table;
+  vertical-align: middle;
+}
+#headline p {
+  vertical-align: middle;
+  display: table-cell;
+}
+#feed-focus select {
+  margin-top: 1.4rem;
 }
 #content {
   background: #ebebe3;
+  text-align: center;
 }
-#content #work-panel {
+#content #main #news-panel #news-feed #level-1-items .item {
+  background: #ffffff;
+  min-height: 180px;
+  margin: 0.4rem;
+}
+#content #main #news-panel #news-feed #level-1-items .item .news-headline {
+  min-height: 3.125rem;
+}
+#content #main #news-panel #news-feed #level-2-items .item {
+  background: #ffffff;
+  min-height: 180px;
+  margin: 0.4rem;
+}
+#content #main #news-panel #news-feed #level-2-items .item .news-headline {
+  min-height: 3.125rem;
+}
+#content #main #news-panel #news-feed #level-3-items {
+  margin: auto 0.2rem;
+}
+#content #main #news-panel #news-feed #level-3-items div .item {
+  margin-bottom: 0.6rem;
+  margin-right: 0.2rem;
+  background: #ffffff;
+}
+#content #main #news-panel #news-feed #level-3-items div .item img {
+  max-width: 25%;
+  display: inline-block;
+}
+#content #main #news-panel #news-feed #level-3-items div .item .news-headline {
+  display: inline-block;
+  background: #ffffff;
+}
+#content #main #work-panel {
   background: #ffffff;
   min-height: 600px;
   max-width: 300px;

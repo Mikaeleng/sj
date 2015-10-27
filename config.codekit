@@ -1124,6 +1124,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/src\/img\/wall1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191684,
+		"inputAbbreviatedPath": "\/src\/img\/wall1.jpg",
+		"outputAbbreviatedPath": "\/src\/img\/wall1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/src\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,

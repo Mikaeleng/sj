@@ -2,57 +2,99 @@
 @import "../sj-icons/sj-icons.css";
 
 #headline{
-        min-height: 66px;
+    min-height: 66px;
+    display: table;
+    vertical-align: middle;
+    p{
+        vertical-align: middle;
+        display: table-cell;
+    }
 }
 #feed-focus{
-
+    select{
+        margin-top:1.4rem;
+    }
 }
+
+
 // main selector for page css
 #content{
     background: @sno;
-    // news panel main view panel
-    #news-panel{
+    text-align: center;
+   #main{
+       // news panel main view panel
+       #news-panel{
 
-        // section for radio buttons to sort the news feed in different ways
-        #feed-sorting{
+           // section for radio buttons to sort the news feed in different ways
+           #feed-sorting{
 
-        }
-        // section for news feed
-        #news-feed{
-            .item{
+           }
+           // section for news feed
+           #news-feed{
+               .item{
 
-            }
-            #level-1-items{
-                .item{
+               }
+               #level-1-items{
+                   .item{
+                       background: @kalk;
+                       min-height: 180px;
+                       margin: 0.4rem;
+                       .news-headline{
+                           min-height: 3.125rem;
+                       }
 
-                }
-            }
-            #level-2-items{
+                   }
+               }
+               #level-2-items{
+                   .item{
+                       background: @kalk;
+                       min-height: 180px;
+                       margin: 0.4rem;
+                       .news-headline{
+                           min-height: 3.125rem;
+                       }
+                   }
+               }
+               #level-3-items{
+                   margin: auto 0.2rem;
+                   div{
+                       .item{
+                           margin-bottom: 0.6rem;
+                           margin-right: 0.2rem;
+                           background: @kalk;
 
-            }
-            #level-3-items{
+                           img{
+                               max-width: 25%;
+                               display: inline-block;
+                           }
+                           .news-headline{
+                               display: inline-block;
+                               background: @kalk;
+                           }
+                       }
+                   }
+               }
 
-            }
+           }
+       }
 
-        }
-    }
+       // adside panel with work actions and listings
+       #work-panel{
+           background: @kalk;
+           min-height: 600px;
+           max-width: 300px;
+           // read list view
+           #read-panel{
 
-    // adside panel with work actions and listings
-    #work-panel{
-        background: @kalk;
-        min-height: 600px;
-        max-width: 300px;
-        // read list view
-        #read-panel{
+           }
+           // edit list in context
+           #edit-panel{
 
-        }
-        // edit list in context
-        #edit-panel{
+           }
+           // add new in list context
+           #new-panel{
 
-        }
-        // add new in list context
-        #new-panel{
-
-        }
-    }
+           }
+       }
+   }
 }

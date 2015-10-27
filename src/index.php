@@ -32,43 +32,113 @@ include_once "function.php";
 <?php
 	topMenu();
 ?>
+        <!-- FRAMEWORK.CSS for styles -->
+        
     <div class="pure-g" id="header">
         <div class="pure-u-1 pure-u-sm-1"></div>     
     </div>
+        
+        <!-- HOME.CSS file for styles -->
+        
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-sm-1-2" id="headline">SJ idag</div> 
+        <div class="pure-u-1 pure-u-sm-1-2" id="headline"><p>SJ idag</p></div> 
         <div class="pure-u-1 pure-u-sm-1-2" id="feed-focus"><select>
             <option>Din roll</option>
             <option>Hela organisationen</option>
             </select> 
         </div>    
     </div>
-        
-        <div class="pure-g" id="content">
+        <div class="" id="content">
+            <div id="main">
             <div class="pure-u-1 pure-u-sm-1-2" id="news-panel">
                 <div id="feed-sorting">
                 </div>
                 <div id="news-feed">
-                    <div id="level-1-items">
+                    
+            <!-- level 1 items -->
+                    <div class="pure-g" id="level-1-items">
+                        <div class="pure-u-1 pure-u-lg-1-2">
                         <div class="item">
-                        <!-- put stuff here dynamicly populated -->
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">Rubrik</div>
+                            </div>
+                        </div>
+                        <div class="pure-u-1 pure-u-lg-1-2">
+                        <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">Rubrik</div>
+                            </div>
                         </div>
                     </div>
-                    <div id="level-2-items">
+            
+            <!-- level 2 items -->
+                    <div class="pure-g" id="level-2-items">
+                        <div class=" pure-u-1-3 pure-u-lg-1-3">
                         <div class="item">
-                        <!-- put stuff here dynamicly populated -->
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">Rubrik</div>
+                            </div>
+                        </div>
+                        <div class=" pure-u-1-3 pure-u-lg-1-3">
+                        <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">Rubrik</div>
+                            </div>
+                        </div>
+                        <div class=" pure-u-1-3 pure-u-lg-1-3">
+                        <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">Rubrik</div>
+                            </div>
                         </div>
                     </div>
-                    <div id="level-3-items">
-                        <div class="item">
-                        <!-- put stuff here dynamicly populated -->
+
+            <!-- level 3 items -->
+                    <div class="pure-g" id="level-3-items">
+                        <div class=" pure-u-1 pure-u-lg-1-2">
+                            <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">1Rubrik</div>
+                            </div>
+                        </div>
+                        <div class=" pure-u-1 pure-u-lg-1-2">
+                            <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">2Rubrik</div>
+                            </div>
+                        </div>
+<div class=" pure-u-1 pure-u-lg-1-2">
+                            <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">3Rubrik</div>
+                            </div>
+                        </div>
+<div class=" pure-u-1 pure-u-lg-1-2">
+                            <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">4Rubrik</div>
+                            </div>
+                        </div>
+<div class=" pure-u-1 pure-u-lg-1-2">
+                            <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">5Rubrik</div>
+                            </div>
+                        </div>
+<div class=" pure-u-1 pure-u-lg-1-2">
+                            <div class="item">
+                            <img class="pure-img" src="img/wall1.jpg"></im>
+                            <div class="news-headline">6Rubrik</div>
+                            </div>
                         </div>
                     </div>
-                </div>
+<!--        End if news-feed-rows -->
             </div>
+<!--        End if news-feed -->
+</div>
             <div class="pure-u-1 pure-u-sm-1-2" id="work-panel"></div>
         </div>
-
+    </div>
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
