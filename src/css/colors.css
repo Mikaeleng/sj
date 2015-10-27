@@ -83,6 +83,7 @@
   text-align: left;
   vertical-align: middle;
   line-height: 55px;
+  cursor: pointer;
 }
 #sort-section #news-sortbar div:last-of-type {
   line-height: 50px;

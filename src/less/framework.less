@@ -1,0 +1,100 @@
+@import "_mixin";
+@import "../sj-icons/sj-icons.css";
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: sj_sansregular,'Fontawesome', sj_sansbold;
+
+}
+.pure-g [class *= "button-middle"]{
+    line-height: inherit;
+}
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background:#EEEEEE;
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+
+// framework section for top navigation consistent navigation
+#top-menu{
+    height: 66px;
+    border-bottom: 1px gray;
+    div:nth-child(2){
+        text-align: center;
+    }
+    div:first-of-type{
+        padding-left: 0.7rem;
+    }
+        div{
+            vertical-align: middle;
+
+
+            &:last-of-type{
+                text-align: right;
+                    padding-right: 0.7rem;
+            }
+        }
+
+}
+// Framework section for top header in page view
+#header{
+    min-height: 75px;
+    background: @kalk;
+}
+
+// framework section for main menu on the left
+
+#main-menu{
+
+}
+
+// framework section for right menu with user settings etc menu
+#user-menu{
+
+}
+
+

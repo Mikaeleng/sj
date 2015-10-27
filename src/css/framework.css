@@ -1,0 +1,78 @@
+@import "../sj-icons/sj-icons.css";
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: sj_sansregular, 'Fontawesome', sj_sansbold;
+}
+.pure-g [class*="button-middle"] {
+  line-height: inherit;
+}
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #EEEEEE;
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+  background: #1cb841;
+  /* this is a green */
+}
+.button-error {
+  background: #ca3c3c;
+  /* this is a maroon */
+}
+.button-warning {
+  background: #df7514;
+  /* this is an orange */
+}
+.button-secondary {
+  background: #42b8dd;
+  /* this is a light blue */
+}
+.button-xsmall {
+  font-size: 70%;
+}
+.button-small {
+  font-size: 85%;
+}
+.button-large {
+  font-size: 110%;
+}
+.button-xlarge {
+  font-size: 125%;
+}
+#top-menu {
+  height: 66px;
+  border-bottom: 1px gray;
+}
+#top-menu div:nth-child(2) {
+  text-align: center;
+}
+#top-menu div:first-of-type {
+  padding-left: 0.7rem;
+}
+#top-menu div {
+  vertical-align: middle;
+}
+#top-menu div:last-of-type {
+  text-align: right;
+  padding-right: 0.7rem;
+}
+#header {
+  min-height: 75px;
+  background: #ffffff;
+}

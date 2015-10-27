@@ -31,6 +31,27 @@ function createTopMenu(){
 <?php
 }
 
+function topMenu(){
+        ?>
+<div class="pure-g" id="top-menu">
+    <div class="pure-u-1-3 pure-u-sm-1-3 button-middle" id="top-menu-button">
+       MENY
+    </div>
+    <div class="pure-u-1-3 pure-u-sm-1-3">
+        <img src="assets/img/sjlogga.png"></im>
+    </div>
+    <div class="pure-u-1-3 pure-u-sm-1-3 button-middle" id="top-search-button">
+        SÖK
+    </div>
+</div>
+<?php
+}
+
+function page_header(){
+?><div class="" id="header"></div>
+
+<?php
+}
 // main navigation
 function createMainNav(){
  ?>

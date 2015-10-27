@@ -18,76 +18,61 @@ include_once "function.php";
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link rel="stylesheet" href="css/pure/pure-min.css">
+        <link rel="stylesheet" href="css/custom_12_grid.css">
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/pure/grids-responsive-old-ie-min.css">
         <![endif]-->
         <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="css/pure/grids-responsive-min.css">
         <!--<![endif]-->
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/framework.css">
+        <link rel="stylesheet" href="css/home.css">
     </head>
     <body>
 <?php
-	addTopMenu();
+	topMenu();
 ?>
-    <div class="pure-g" id="top-tabs">
-        <div class="pure-u-sm-12-24 pure-u-1-2 active-tab" id="news-tab">
-        <span><i class="sj-icons-train"></i>SJ idag</span>
-        </div>
-        <div class="pure-u-sm-11-24 pure-u-1-2" id="work-tab">
-        <span><i class="sj-icons-heart"></i>Ditt arbete</span>
-            <div class="fa-cog">redigera</div>
-        </div>  
+    <div class="pure-g" id="header">
+        <div class="pure-u-1 pure-u-sm-1"></div>     
     </div>
-        <div class="pure-g arrow-row">
-            <div class="pure-u-sm-1-2 pure-u-1-2" id="left-arrow"><img src="img/green_arrow.png"></im></div>
-        <div class="pure-u-sm-1-2 pure-u-1-2" id="right-arrow"><img src="img/green_arrow.png"class="hidden"></im></div>
-        </div>  
-    <div class="pure-g" id="sort-menu">
-        <div class="pure-u-sm-1-5 pure-u-1-5" id="button-sort">Sortera</div>
-        <div class="pure-u-sm-4-5 pure-u-4-5" id="button-pagination">
-            <i>< 1 2 3 4 ></1></i></div>
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-sm-1-2" id="headline">SJ idag</div> 
+        <div class="pure-u-1 pure-u-sm-1-2" id="feed-focus"><select>
+            <option>Din roll</option>
+            <option>Hela organisationen</option>
+            </select> 
+        </div>    
     </div>
-<div class="pure-g hidden" id="sort-items">
-<form class="pure-form pure-u-1 pure-u-sm-1 pure-u-lg-1">
-    <fieldset>
-        <label for="all">
-        <input type="radio" name="sorting" id="all" checked>
-            Alla
-        </label>
-        <label for="desc">
-        <input type="radio" name="sorting" id="desc" >
-            Fallande (A-Ö)
-        </label>
-        <label for="asc">
-        <input type="radio" name="sorting" id="asc" >
-            Stigande (Ö-A)
-        </label>
-        <label for="popular">
-        <input type="radio" name="sorting" id="popular" >
-            Mest lästa
-        </label>
-        <button class=" pure-button pure-button-primary fa-close"></button>
-    </fieldset>
-</form>
-</div>
-    <div class="pure-g" id="content">
-        <div class="pure-u-1 pure-u-sm-1-2" id="news">
-            <div class="pure-g pure-u-1">
-                <button class="pure-u-5-5 pure-button pure-button-primary button-xl hidden"id="resetList-button" >Återställ listan</button>
-                <?php addNewsList();
-?>
+        
+        <div class="pure-g" id="content">
+            <div class="pure-u-1 pure-u-sm-1-2" id="news-panel">
+                <div id="feed-sorting">
+                </div>
+                <div id="news-feed">
+                    <div id="level-1-items">
+                        <div class="item">
+                        <!-- put stuff here dynamicly populated -->
+                        </div>
+                    </div>
+                    <div id="level-2-items">
+                        <div class="item">
+                        <!-- put stuff here dynamicly populated -->
+                        </div>
+                    </div>
+                    <div id="level-3-items">
+                        <div class="item">
+                        <!-- put stuff here dynamicly populated -->
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="pure-u-1 pure-u-sm-1-2" id="work-panel"></div>
         </div>
 
-       <div class="pure-u-1 pure-u-1-2 pure-u-lg-1-2 hidden" id="work">
-            <?php addWorkList();?>
-        </div>
-    </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
+        <script src="js/widgets.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

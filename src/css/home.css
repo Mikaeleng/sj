@@ -1,0 +1,12 @@
+@import "../sj-icons/sj-icons.css";
+#headline {
+  min-height: 66px;
+}
+#content {
+  background: #ebebe3;
+}
+#content #work-panel {
+  background: #ffffff;
+  min-height: 600px;
+  max-width: 300px;
+}
