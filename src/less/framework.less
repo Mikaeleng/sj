@@ -17,6 +17,9 @@ html, button, input, select, textarea,
 body{
     background:#EEEEEE;
 }
+
+
+
 .button-success,
 .button-error,
 .button-warning,
@@ -59,8 +62,13 @@ body{
 
 // framework section for top navigation consistent navigation
 #top-menu{
+    position: fixed;
+    background: @kalk;
+    z-index: 999;
     height: 66px;
+    width: 100%;
     border-bottom: 1px gray;
+    line-height: 66px;
     div:nth-child(2){
         text-align: center;
     }
@@ -80,8 +88,13 @@ body{
 }
 // Framework section for top header in page view
 #header{
-    min-height: 75px;
-    background: @kalk;
+    margin-top: 66px;
+    background: @leaf;
+    position: fixed;
+    width: 100%;
+    color: @kalk;
+    div{margin: 0.2rem 0.4rem;}
+
 }
 
 // framework section for main menu on the left

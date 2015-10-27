@@ -1,32 +1,49 @@
 @import "_mixin";
 @import "../sj-icons/sj-icons.css";
-
-#headline{
-    min-height: 66px;
-    display: table;
-    vertical-align: middle;
-    p{
-        vertical-align: middle;
-        display: table-cell;
+#personalize-feed {
+    padding-top: 2rem;
+    position: relative;
+    margin: 0 auto;
+    div{
+        margin-top: 80px;
     }
-}
-#feed-focus{
-    select{
-        margin-top:1.4rem;
+    #headline {
+        min-height: 66px;
+        display: table;
+        vertical-align: middle;
+        font-size: 2rem;
+        p {
+            margin-left: 1.4rem;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+    #feed-focus {
+        select {
+            margin-top: 1.4rem;
+        }
     }
 }
 
 
 // main selector for page css
 #content{
+    margin-bottom: 100px;
     background: @sno;
     text-align: center;
+    background: transparent;
    #main{
        // news panel main view panel
        #news-panel{
 
            // section for radio buttons to sort the news feed in different ways
            #feed-sorting{
+               .pure-form {
+                   text-align: left;
+                   label {
+                       font-size: 0.9rem;
+                   }
+               }
 
            }
            // section for news feed
@@ -35,10 +52,13 @@
 
                }
                #level-1-items{
+                   .pure-img{
+                       min-width: 100%;
+                       min-height: auto;
+                   }
                    .item{
                        background: @kalk;
-                       min-height: 180px;
-                       margin: 0.4rem;
+                       margin: 0 0.4rem 0.4rem;
                        .news-headline{
                            min-height: 3.125rem;
                        }
@@ -46,18 +66,33 @@
                    }
                }
                #level-2-items{
-                   .item{
-                       background: @kalk;
-                       min-height: 180px;
-                       margin: 0.4rem;
-                       .news-headline{
-                           min-height: 3.125rem;
+                   margin-bottom: 0.4rem;
+                   div{
+                       .item{
+                           height:100%;
+                           background: @kalk;
+                           margin: 0.4rem;
+                           .news-headline{
+                               height: 3.125rem;
+                               padding: 0.4rem;
+                               display: table-cell;
+                               vertical-align: middle;
+                           }
+                       }
+                   }
+                   #kpi{
+                       background: @raps;
+                       div{
+                           font-family: sj_sansbold;
+                           background: transparent;
+                           font-size: 1.4rem;
                        }
                    }
                }
                #level-3-items{
                    margin: auto 0.2rem;
                    div{
+                       height: 100%;
                        .item{
                            margin-bottom: 0.6rem;
                            margin-right: 0.2rem;
@@ -70,6 +105,9 @@
                            .news-headline{
                                display: inline-block;
                                background: @kalk;
+                               font-size: 0.9rem;
+                               height: inherit;
+                               vertical-align: middle;
                            }
                        }
                    }
@@ -80,16 +118,201 @@
 
        // adside panel with work actions and listings
        #work-panel{
-           background: @kalk;
-           min-height: 600px;
-           max-width: 300px;
+           margin-top: 177px;
+           .panel{
+               min-height: 600px;
+               margin-top: 39px;
+               background: @kalk;
+
+           }
+           // workpanel here
+
            // read list view
+           min-height: 600px;
            #read-panel{
+               max-width: 300px;
+                line-height: 2.75rem;
+               .work-panel-header{
+                   min-height: 50px;
+                   border-bottom: 3px solid @sjo;
+                   div{line-height: 2.75rem;}
+                   div:first-of-type{
+                       text-align: left;
+                       font-size: 1.15rem;
+                       padding-left: 0.4rem;
+                       line-height: 2.75rem;
+                   }
+                   div:last-of-type{
+                       text-align: right;
+                       font-size: 0.7rem;
+                       cursor: pointer;
+                       line-height: 2.4rem;
+                   }
+               }
+                .pure-button{margin:0.4rem;}
+
+               .read-item{
+                   cursor: pointer;
+                   .cat-doc{ background: @sno3;}
+                   .cat-article{ background: @sno2;}
+                   .cat-link{background:@sno}
+
+                   div{line-height: inherit;
+                       min-height: 44px;
+                       display: inline-block;
+                   }
+                   div:first-of-type{
+
+                   }
+                   div:last-of-type{
+                    padding-left: 0.4rem;
+                   }
+               }
 
            }
            // edit list in context
            #edit-panel{
+               max-width: 300px;
+               .work-panel-header{
+                   min-height: 50px;
+                   border-bottom: 3px solid @sjo;
+                   div{line-height: 2.75rem;}
+                   div:first-of-type{
+                       text-align: left;
+                       padding-left: 0.4rem;
+                       font-size: 0.7rem;
+                       line-height: 2.4rem;
+                   }
+                   div:nth-child(2){
+                       text-align: center;
+                       font-size: 1.15rem;
+                   }
+                   div:last-of-type{
+                       text-align: right;
+                       font-size: 0.7rem;
+                       cursor: pointer;
+                       line-height: 2.4rem;
+                   }
+               }
+                #edit-list {
+                    background:@sno2;
+                    .read-item {
+                       // margin: 0 0.4rem 0.2rem;
+                        background: @kalk;
+                        .cat-doc {
+                            background: @sno3;
+                        }
+                        .cat-article {
+                            background: @sno2;
+                        }
+                        .cat-link {
+                            background: @sno
+                        }
 
+                        div:nth-child(2) {
+                            padding-left: 0.4rem;
+                            line-height: 2.75rem;
+                            min-height: 44px;
+                            display: inline-block;
+                        }
+                        div:last-of-type {
+                            line-height: 2.75rem;
+                            text-align: right;
+                            padding-right: 0.4rem;
+                        }
+                        div[class*="cat"] {
+                            font-size: 0.4rem;
+                            margin: 0 0.4rem;
+                        }
+                    }
+                }
+
+           }
+           #extended-panel{
+               width: 100%;
+               background: @kalk;
+
+               .work-panel-header {
+                   min-height: 50px;
+                   border-bottom: 3px solid @sjo;
+                   div {
+                       line-height: 2.75rem;
+                        text-align: left;
+                       font-size: 2rem;
+                       padding-left: 0.4rem;
+                       line-height: 2.75rem;
+                   }
+               }
+               #extended-button{
+                   -webkit-justify-content: flex-end;
+                   -ms-flex-pack: end;
+                   justify-content: flex-end;
+               }
+               .pure-button{margin:0.4rem;}
+               #extended-list{
+                   height: 600px;
+                   display: -ms-flexbox;
+                   display: -webkit-flex;
+                   display: flex;
+                   -webkit-flex-direction: column;
+                   -ms-flex-direction: column;
+                   flex-direction: column;
+                   -webkit-flex-wrap: wrap;
+                   -ms-flex-wrap: wrap;
+                   flex-wrap: wrap;
+                   -webkit-align-content: flex-start;
+                   -ms-flex-line-pack: start;
+                   align-content: flex-start;
+                   -webkit-align-items: flex-start;
+                   -ms-flex-align: start;
+                   align-items: flex-start;
+
+                   .read-item{
+                       -webkit-order: 0;
+                       -ms-flex-order: 0;
+                       order: 0;
+                       -webkit-flex: 0 1 auto;
+                       -ms-flex: 0 1 auto;
+                       flex: 0 1 auto;
+                       -webkit-align-self: auto;
+                       -ms-flex-item-align: auto;
+                       align-self: auto;
+                        div{
+                            line-height: 2.75rem;
+                            min-height: 44px;}
+                       .cat-article {
+                           background: @sno2;
+                       }
+                       .cat-link {
+                           background: @sno;
+                       }
+                       .cat-article, .cat-link{
+                           padding-left: 0.4rem;
+                       }
+                       div:nth-child(1){
+                           text-align: left;
+                           line-height: 2.75rem;
+                           min-height: 44px;
+                       }
+                       div:nth-child(2) {
+                         div {
+                             padding-left: 0.4rem;
+                             text-align: left!important;
+                             display: inline-block;
+                         }
+                       }
+                       div:nth-child(3) {
+                           text-align: right;
+                       }
+                       .cat-doc {
+
+                           div{
+                               padding-left: 0.4rem;
+                               background: @sno3;
+                               width:80%;}
+                       }
+                   }
+               }
            }
            // add new in list context
            #new-panel{

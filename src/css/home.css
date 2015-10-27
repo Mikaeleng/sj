@@ -1,38 +1,76 @@
 @import "../sj-icons/sj-icons.css";
-#headline {
+#personalize-feed {
+  padding-top: 2rem;
+  position: relative;
+  margin: 0 auto;
+}
+#personalize-feed div {
+  margin-top: 80px;
+}
+#personalize-feed #headline {
   min-height: 66px;
   display: table;
   vertical-align: middle;
+  font-size: 2rem;
 }
-#headline p {
+#personalize-feed #headline p {
+  margin-left: 1.4rem;
   vertical-align: middle;
   display: table-cell;
 }
-#feed-focus select {
+#personalize-feed #feed-focus select {
   margin-top: 1.4rem;
 }
 #content {
-  background: #ebebe3;
+  margin-bottom: 100px;
+  background: #f4f4ee;
   text-align: center;
+  background: transparent;
+}
+#content #main #news-panel #feed-sorting .pure-form {
+  text-align: left;
+}
+#content #main #news-panel #feed-sorting .pure-form label {
+  font-size: 0.9rem;
+}
+#content #main #news-panel #news-feed #level-1-items .pure-img {
+  min-width: 100%;
+  min-height: auto;
 }
 #content #main #news-panel #news-feed #level-1-items .item {
   background: #ffffff;
-  min-height: 180px;
-  margin: 0.4rem;
+  margin: 0 0.4rem 0.4rem;
 }
 #content #main #news-panel #news-feed #level-1-items .item .news-headline {
   min-height: 3.125rem;
 }
-#content #main #news-panel #news-feed #level-2-items .item {
+#content #main #news-panel #news-feed #level-2-items {
+  margin-bottom: 0.4rem;
+}
+#content #main #news-panel #news-feed #level-2-items div .item {
+  height: 100%;
   background: #ffffff;
-  min-height: 180px;
   margin: 0.4rem;
 }
-#content #main #news-panel #news-feed #level-2-items .item .news-headline {
-  min-height: 3.125rem;
+#content #main #news-panel #news-feed #level-2-items div .item .news-headline {
+  height: 3.125rem;
+  padding: 0.4rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+#content #main #news-panel #news-feed #level-2-items #kpi {
+  background: #efdf00;
+}
+#content #main #news-panel #news-feed #level-2-items #kpi div {
+  font-family: sj_sansbold;
+  background: transparent;
+  font-size: 1.4rem;
 }
 #content #main #news-panel #news-feed #level-3-items {
   margin: auto 0.2rem;
+}
+#content #main #news-panel #news-feed #level-3-items div {
+  height: 100%;
 }
 #content #main #news-panel #news-feed #level-3-items div .item {
   margin-bottom: 0.6rem;
@@ -46,9 +84,201 @@
 #content #main #news-panel #news-feed #level-3-items div .item .news-headline {
   display: inline-block;
   background: #ffffff;
+  font-size: 0.9rem;
+  height: inherit;
+  vertical-align: middle;
 }
 #content #main #work-panel {
-  background: #ffffff;
+  margin-top: 177px;
   min-height: 600px;
+}
+#content #main #work-panel .panel {
+  min-height: 600px;
+  margin-top: 39px;
+  background: #ffffff;
+}
+#content #main #work-panel #read-panel {
   max-width: 300px;
+  line-height: 2.75rem;
+}
+#content #main #work-panel #read-panel .work-panel-header {
+  min-height: 50px;
+  border-bottom: 3px solid #2b7ea7;
+}
+#content #main #work-panel #read-panel .work-panel-header div {
+  line-height: 2.75rem;
+}
+#content #main #work-panel #read-panel .work-panel-header div:first-of-type {
+  text-align: left;
+  font-size: 1.15rem;
+  padding-left: 0.4rem;
+  line-height: 2.75rem;
+}
+#content #main #work-panel #read-panel .work-panel-header div:last-of-type {
+  text-align: right;
+  font-size: 0.7rem;
+  cursor: pointer;
+  line-height: 2.4rem;
+}
+#content #main #work-panel #read-panel .pure-button {
+  margin: 0.4rem;
+}
+#content #main #work-panel #read-panel .read-item {
+  cursor: pointer;
+}
+#content #main #work-panel #read-panel .read-item .cat-doc {
+  background: #dbdbd7;
+}
+#content #main #work-panel #read-panel .read-item .cat-article {
+  background: #ebebe3;
+}
+#content #main #work-panel #read-panel .read-item .cat-link {
+  background: #f4f4ee;
+}
+#content #main #work-panel #read-panel .read-item div {
+  line-height: inherit;
+  min-height: 44px;
+  display: inline-block;
+}
+#content #main #work-panel #read-panel .read-item div:last-of-type {
+  padding-left: 0.4rem;
+}
+#content #main #work-panel #edit-panel {
+  max-width: 300px;
+}
+#content #main #work-panel #edit-panel .work-panel-header {
+  min-height: 50px;
+  border-bottom: 3px solid #2b7ea7;
+}
+#content #main #work-panel #edit-panel .work-panel-header div {
+  line-height: 2.75rem;
+}
+#content #main #work-panel #edit-panel .work-panel-header div:first-of-type {
+  text-align: left;
+  padding-left: 0.4rem;
+  font-size: 0.7rem;
+  line-height: 2.4rem;
+}
+#content #main #work-panel #edit-panel .work-panel-header div:nth-child(2) {
+  text-align: center;
+  font-size: 1.15rem;
+}
+#content #main #work-panel #edit-panel .work-panel-header div:last-of-type {
+  text-align: right;
+  font-size: 0.7rem;
+  cursor: pointer;
+  line-height: 2.4rem;
+}
+#content #main #work-panel #edit-panel #edit-list {
+  background: #ebebe3;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item {
+  background: #ffffff;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item .cat-doc {
+  background: #dbdbd7;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item .cat-article {
+  background: #ebebe3;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item .cat-link {
+  background: #f4f4ee;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item div:nth-child(2) {
+  padding-left: 0.4rem;
+  line-height: 2.75rem;
+  min-height: 44px;
+  display: inline-block;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item div:last-of-type {
+  line-height: 2.75rem;
+  text-align: right;
+  padding-right: 0.4rem;
+}
+#content #main #work-panel #edit-panel #edit-list .read-item div[class*="cat"] {
+  font-size: 0.4rem;
+  margin: 0 0.4rem;
+}
+#content #main #work-panel #extended-panel {
+  width: 100%;
+  background: #ffffff;
+}
+#content #main #work-panel #extended-panel .work-panel-header {
+  min-height: 50px;
+  border-bottom: 3px solid #2b7ea7;
+}
+#content #main #work-panel #extended-panel .work-panel-header div {
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 0.4rem;
+  line-height: 2.75rem;
+}
+#content #main #work-panel #extended-panel #extended-button {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+#content #main #work-panel #extended-panel .pure-button {
+  margin: 0.4rem;
+}
+#content #main #work-panel #extended-panel #extended-list {
+  height: 600px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item div {
+  line-height: 2.75rem;
+  min-height: 44px;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item .cat-article {
+  background: #ebebe3;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item .cat-link {
+  background: #f4f4ee;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item .cat-article,
+#content #main #work-panel #extended-panel #extended-list .read-item .cat-link {
+  padding-left: 0.4rem;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item div:nth-child(1) {
+  text-align: left;
+  line-height: 2.75rem;
+  min-height: 44px;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item div:nth-child(2) div {
+  padding-left: 0.4rem;
+  text-align: left!important;
+  display: inline-block;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item div:nth-child(3) {
+  text-align: right;
+}
+#content #main #work-panel #extended-panel #extended-list .read-item .cat-doc div {
+  padding-left: 0.4rem;
+  background: #dbdbd7;
+  width: 80%;
 }

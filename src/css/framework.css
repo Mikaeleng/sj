@@ -54,8 +54,13 @@ body {
   font-size: 125%;
 }
 #top-menu {
+  position: fixed;
+  background: #ffffff;
+  z-index: 999;
   height: 66px;
+  width: 100%;
   border-bottom: 1px gray;
+  line-height: 66px;
 }
 #top-menu div:nth-child(2) {
   text-align: center;
@@ -71,6 +76,12 @@ body {
   padding-right: 0.7rem;
 }
 #header {
-  min-height: 75px;
-  background: #ffffff;
+  margin-top: 66px;
+  background: #00af49;
+  position: fixed;
+  width: 100%;
+  color: #ffffff;
+}
+#header div {
+  margin: 0.2rem 0.4rem;
 }

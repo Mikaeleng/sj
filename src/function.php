@@ -1,6 +1,9 @@
 <?php
 //      Top menu elements
 
+include_once("partials/readList.php");
+include_once("partials/editList.php");
+include_once("partials/extendedList.php");
 
 function addTopMenu(){
         ?>
@@ -194,4 +197,6 @@ function addWorkList(){
 
 <?php
 }
+
+
 ?>
