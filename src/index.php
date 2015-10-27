@@ -59,15 +59,15 @@ include_once "function.php";
     <fieldset>
         <label for="all">
         <input type="radio" name="sorting" id="all" checked>
-            Alla
+            Senaste datum
         </label>
         <label for="desc">
         <input type="radio" name="sorting" id="desc" >
-            Fallande (A-Ö)
+            Stigande (A-Ö)
         </label>
         <label for="asc">
         <input type="radio" name="sorting" id="asc" >
-            Stigande (Ö-A)
+            Fallande (Ö-A)
         </label>
         <label for="popular">
         <input type="radio" name="sorting" id="popular" >
@@ -201,7 +201,7 @@ include_once "function.php";
                 <?php extendedList();?>
                 
             </div>
-            <div class="pure-g " id="extended-button"><a class="pure-button pure-u-1-5">Visa färre</a>
+            <div class="pure-g " id="extended-button"><a class="pure-button button-secondary pure-u-1-5">Visa färre</a>
         </div>
         </div>
 </div>
