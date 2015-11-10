@@ -24,6 +24,9 @@
 
 [data-icon]:before,
 .sj-icons-heart:before,
+.sj-icons-number-one-circle:before,
+.sj-icons-number-three-circle:before,
+.sj-icons-number-two-circle:before,
 .sj-icons-train:before {
   display: inline-block;
   font-family: "sj-icons";
@@ -40,7 +43,13 @@
 }
 
 .sj-icons-heart:before { content: "\f100"; }
+.sj-icons-number-one-circle:before { content: "\f102"; }
+.sj-icons-number-three-circle:before { content: "\f104"; }
+.sj-icons-number-two-circle:before { content: "\f103"; }
 .sj-icons-train:before { content: "\f101"; }
 
 $font-sj-icons-heart: "\f100";
+$font-sj-icons-number-one-circle: "\f102";
+$font-sj-icons-number-three-circle: "\f104";
+$font-sj-icons-number-two-circle: "\f103";
 $font-sj-icons-train: "\f101";

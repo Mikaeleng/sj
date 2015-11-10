@@ -4,6 +4,9 @@
 include_once("partials/readList.php");
 include_once("partials/editList.php");
 include_once("partials/extendedList.php");
+include_once("partials/pushmenu.php");
+include_once("partials/foldmenu.php");
+include_once("partials/searchmenu.php");
 
 function addTopMenu(){
         ?>
@@ -38,7 +41,7 @@ function topMenu(){
         ?>
 <div class="pure-g" id="top-menu">
     <div class="pure-u-1-3 pure-u-sm-1-3 button-middle" id="top-menu-button">
-       MENY
+        MENY
     </div>
     <div class="pure-u-1-3 pure-u-sm-1-3">
         <img src="assets/img/sjlogga.png"></im>
@@ -49,6 +52,44 @@ function topMenu(){
 </div>
 <?php
 }
+
+function top_fold_menu(){
+    ?>
+    <div class="pure-g" id="top-menu">
+        <div class="pure-u-1-3 pure-u-sm-1-3 button-middle" id="top-menu-button">
+            <a href="#" aria-haspopup="true" tabindex="0" id="menuCloseBtn" class="slicknav_btn slicknav_close" style="outline: none;">
+
+<span class="slicknav_icon">
+MENY
+</span>
+            </a>
+        </div>
+        <div class="pure-u-1-3 pure-u-sm-1-3">
+            <img src="assets/img/sjlogga.png"></im>
+        </div>
+        <div class="pure-u-1-3 pure-u-sm-1-3 button-middle" id="top-search-button">
+            SÖK
+        </div>
+    </div>
+    <?php
+}
+
+function top_push_menu(){
+    ?>
+    <div class="pure-g" id="top-menu">
+        <div class="pure-u-1-3 pure-u-sm-1-3 button-middle menu-trigger" id="trigger">
+            MENY
+        </div>
+        <div class="pure-u-1-3 pure-u-sm-1-3">
+            <img src="assets/img/sjlogga.png"></im>
+        </div>
+        <div class="pure-u-1-3 pure-u-sm-1-3 button-middle" id="">
+           <a href="sidr-right" id="top-search-button"> SÖK</a>
+        </div>
+    </div>
+    <?php
+}
+
 
 function page_header(){
 ?><div class="" id="header"></div>

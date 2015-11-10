@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once "function.php";
 ?>
 <!doctype html>
@@ -34,9 +34,9 @@ include_once "function.php";
 <div class="pure-g" id="navbar">
             <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 active-tab" id="news-button"><div><i class="sj-icons-train"></i>SJ idag</div></div>
             <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2" id="work-button"><div><i class="sj-icons-heart"></i>Ditt arbete</div></div>
-        
+
     </div>
-        
+
 <div class="pure-g" id="arrowbar">
         <div class="pure-u-sm-1-2 pure-u-1-2" id="left-arrow"><img src="img/green_arrow.png"></im></div>
     <div class="pure-u-sm-1-2 pure-u-1-2" id="right-arrow"><img src="img/green_arrow.png"class="hidden"></im></div>
@@ -78,7 +78,7 @@ include_once "function.php";
     </fieldset>
 </form></div>
     </div>
-    
+
     <div class="pure-g" id="work-selectbar">
             <div class="pure-u-1 pure-u-sm-1"><form class="pure-form pure-u-1 pure-u-sm-1 pure-u-lg-1">
     <fieldset>
@@ -103,9 +103,9 @@ include_once "function.php";
 </form></div>
     </div>
 </div>
-    
-    
-    
+
+
+
     <!-- Content section -->
         <div class="pure-g" id="content">
             <div class="pure-u-1 pure-u-sm-1-2" id="news-content">
@@ -126,7 +126,7 @@ include_once "function.php";
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

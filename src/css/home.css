@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 #personalize-feed div {
-  margin-top: 80px;
+  //margin-top: 80px;
 }
 #personalize-feed #headline {
   min-height: 66px;
@@ -61,7 +61,10 @@
 #content #main #news-panel #news-feed #level-2-items #kpi {
   background: #efdf00;
 }
-#content #main #news-panel #news-feed #level-2-items #kpi div {
+#content #main #news-panel #news-feed #level-2-items #kpi .news-headline {
+  margin-top: 30%;
+  word-break: break-word;
+  padding: 0.4rem;
   font-family: sj_sansbold;
   background: transparent;
   font-size: 1.4rem;
@@ -89,7 +92,7 @@
   vertical-align: middle;
 }
 #content #main #work-panel {
-  margin-top: 177px;
+  margin-top: 98px;
   min-height: 600px;
 }
 #content #main #work-panel .panel {

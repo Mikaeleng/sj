@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "sj-icons";
-  src: url("sj-icons.eot");
-  src: url("sj-icons.eot?#iefix") format("embedded-opentype"),
-       url("sj-icons.woff") format("woff"),
-       url("sj-icons.ttf") format("truetype"),
-       url("sj-icons.svg#sj-icons") format("svg");
+  src: url("./sj-icons.eot");
+  src: url("./sj-icons.eot?#iefix") format("embedded-opentype"),
+       url("./sj-icons.woff") format("woff"),
+       url("./sj-icons.ttf") format("truetype"),
+       url("./sj-icons.svg#sj-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "sj-icons";
-    src: url("sj-icons.svg#sj-icons") format("svg");
+    src: url("./sj-icons.svg#sj-icons") format("svg");
   }
 }
 
@@ -24,6 +24,9 @@
 
 [data-icon]:before,
 .sj-icons-heart:before,
+.sj-icons-number-one-circle:before,
+.sj-icons-number-three-circle:before,
+.sj-icons-number-two-circle:before,
 .sj-icons-train:before {
   display: inline-block;
   font-family: "sj-icons";
@@ -40,4 +43,7 @@
 }
 
 .sj-icons-heart:before { content: "\f100"; }
+.sj-icons-number-one-circle:before { content: "\f102"; }
+.sj-icons-number-three-circle:before { content: "\f104"; }
+.sj-icons-number-two-circle:before { content: "\f103"; }
 .sj-icons-train:before { content: "\f101"; }

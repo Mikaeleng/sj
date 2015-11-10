@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "88ae769694e20652dbdc3c0b52d9a58ab49cd46e4986085f2d94457f6f422251",
-    "current": "88ae769694e20652dbdc3c0b52d9a58ab49cd46e4986085f2d94457f6f422251"
+    "previous": "86cc50c1921d6e40395930588824afb0fbe9643048759211e204be2e7c2fb4d6",
+    "current": "86cc50c1921d6e40395930588824afb0fbe9643048759211e204be2e7c2fb4d6"
   },
   "fonts": [
     "/Applications/AMPPS/www/dev/sj/src/sj-icons/sj-icons.ttf",
@@ -13,6 +13,18 @@
     "heart": {
       "codepoint": 61696,
       "source": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors/heart.svg"
+    },
+    "number-one-circle": {
+      "codepoint": 61698,
+      "source": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors/number-one-circle.svg"
+    },
+    "number-three-circle": {
+      "codepoint": 61700,
+      "source": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors/number-three-circle.svg"
+    },
+    "number-two-circle": {
+      "codepoint": 61699,
+      "source": "/Applications/AMPPS/www/dev/sj/src/sj-icons/vectors/number-two-circle.svg"
     },
     "train": {
       "codepoint": 61697,
@@ -42,7 +54,6 @@
     },
     "preprocessor_path": "",
     "quiet": false,
-    "skip_first": false,
     "templates": [
       "scss",
       "preview",

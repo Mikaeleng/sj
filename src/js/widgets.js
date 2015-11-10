@@ -22,6 +22,7 @@ jQuery( document ).ready(function( $ ) {
 
     // show extended "Ditt arbete" panel
     $("#read-panel .pure-button").click(function() {
+        window.scrollTo(0, 0);
         $("#extended-panel").show();
         $("#read-panel").hide();
         $("#news-panel").hide();
@@ -30,6 +31,7 @@ jQuery( document ).ready(function( $ ) {
 
     // hides extended "Ditt arbete" panel
     $("#extended-panel .pure-button").click(function() {
+        window.scrollTo(0, 0);
         $("#extended-panel").hide();
         $("#read-panel").show();
         $("#news-panel").show();

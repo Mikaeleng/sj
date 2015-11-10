@@ -55,6 +55,10 @@ body {
 }
 #top-menu {
   position: fixed;
+  position: relative;
+  z-index: auto;
+  width: auto;
+  margin: 0;
   background: #ffffff;
   z-index: 999;
   height: 66px;
@@ -81,6 +85,10 @@ body {
   position: fixed;
   width: 100%;
   color: #ffffff;
+  position: relative;
+  z-index: auto;
+  width: auto;
+  margin: 0;
 }
 #header div {
   margin: 0.2rem 0.4rem;
